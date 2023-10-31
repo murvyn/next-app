@@ -49,7 +49,7 @@ export async function DELETE(
 ) {
   const user = await prisma.user.findUnique({
     where: {
-      id: params.id,
+      id: params.id ,
     },
   });
   if (!user)
